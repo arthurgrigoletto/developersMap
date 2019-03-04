@@ -1,14 +1,17 @@
 import dotenv from 'dotenv';
 import React, { Fragment } from 'react';
+import './config/reactotron';
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { Provider } from 'react-redux';
 import store from './store';
-import 'font-awesome/css/font-awesome.css';
 
 import Routes from './routes';
-import './config/reactotron';
+
+import 'font-awesome/css/font-awesome.css';
+import './styles.css';
 
 dotenv.config();
 

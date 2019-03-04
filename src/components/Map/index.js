@@ -14,8 +14,8 @@ class Map extends Component {
     viewport: {
       width: window.innerWidth,
       height: window.innerHeight,
-      latitude: -23.6319917,
-      longitude: -46.564092599999995,
+      latitude: -23.6319513,
+      longitude: -46.5652669,
       zoom: 15,
     },
   };
@@ -56,7 +56,7 @@ class Map extends Component {
       <MapGL
         {...viewportState}
         onClick={this.handleMapClick}
-        mapStyle="mapbox://styles/mapbox/light-v10"
+        mapStyle="mapbox://styles/mapbox/light-v9"
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
         onViewportChange={viewport => this.setState({ viewport })}
       >
